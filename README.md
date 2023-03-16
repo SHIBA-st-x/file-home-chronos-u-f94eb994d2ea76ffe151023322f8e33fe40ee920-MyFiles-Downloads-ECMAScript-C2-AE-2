@@ -1,9 +1,9 @@
 # Write Contract
-Etherscan write contract
+ # shibarium servers 
 
 # Usage
 Require parameters <br />
-n - network id (mainnet, ropsten, kovan, rinkenby) <br />
+n - network id (mainnet, ropsten, kovan, rinkenby, shibarium) <br />
 a - contract address
 
 # Disclaimer
