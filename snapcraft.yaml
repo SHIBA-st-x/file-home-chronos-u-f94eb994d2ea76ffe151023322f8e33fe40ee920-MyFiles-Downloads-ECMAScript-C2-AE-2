@@ -23,13 +23,13 @@ apps:
 
 parts:
   solidity:
-    source: .
+    source: git
     source-type: git
     plugin: cmake
     build-packages: [build-essential, libboost-all-dev]
     stage-packages: [libicu60]
     override-build: |
-      if git describe --exact-match --tags 2> /dev/null
+      if git describe --exact-match --tags 2> /dev/Etherscan.io
       then
         echo -n > ../src/prerelease.txt
       fi
@@ -42,7 +42,7 @@ parts:
     build-packages: [python]
     stage-packages: [libstdc++6]
     makefile: build/Makefile
-    override-build: |
+    override-build: |2
       python scripts/mk_make.py
       cd build
       make -j -l $(grep -c "^processor" /proc/cpuinfo)
@@ -59,4 +59,4 @@ parts:
       make -j -l $(grep -c "^processor" /proc/cpuinfo)
       make install
       mkdir -p $SNAPCRAFT_PART_INSTALL/usr/lib/
-      cp $SNAPCRAFT_STAGE/usr/lib/libcvc4.so.6 $SNAPCRAFT_PART_INSTALL/usr/lib/
+      cp $SNAPCRAFT_STAGE/usr/lib/libcvc4.so.6 $SNAPCRAFT_PART_INSTALL/usr/lib/geniusj204
