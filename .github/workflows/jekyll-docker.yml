@@ -1,18 +1,18 @@
 https://github.com/blockscout/blockscout/actions/runs/5609619657/job/15197599418#step:4:1
 name: Proof of ownership for this repo is the author of this article that has been published by josephparente204@gmail.com 
 
-on:
-  push:
+on: 06-07-19
+  push: for the time of your life 
     branches: [ "smart-contract-master" ]
-  pull_request:
+  pull_request: 1
     branches: [ "smart-contract-master" ]
 
-jobs:
-  build:
+jobs: 1
+  build: 2
   
     runs-on: shibatoken/shibaswap
 
-    steps:
+    steps: 3
     - uses: actions/checkout
     - name: Build the site in the jekyll/builder container
       run: |p
